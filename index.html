@@ -1,10 +1,156 @@
 <!doctype html>
 <html lang="ja-JP">
 <head>
-	<meta charset="UTF-8">
-	<title>Designer meets Programming</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Designer meets Programming == デザイナー向けプログラミング勉強会</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+<style>
+	#header {
+		margin: 0 0 50px;
+		padding: 50px 0 70px;
+		background: #0ac;
+		border-bottom: 1px solid #fff;
+		text-align: center;
+	}
+	#header h1 {
+		font-size: 2em;
+		font-weight: 200;
+		letter-spacing: 0.05em;
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+		color: #fff;
+	}
+	#content h2,
+	#content h3 {
+		text-align: center;
+	}
+	#footer {
+		text-align: center;
+		background: #eee;
+		border-top: 1px solid #fff;
+		color: #888;
+	}
+	#link-footer li:first-child {
+		border-left: none;
+	}
+	#log-table th {
+		text-align: center;
+		vertical-align: middle;
+	}
+	#log-table td {
+		vertical-align: middle;
+	}
+	td.cell-icon {
+		text-align: center;
+	}
+	@media (max-width:767px) {
+		#header, #footer {
+			margin-right: -20px;
+			margin-left: -20px;
+		}
+		#header {
+			margin-bottom: 20px;
+			padding: 30px 0;
+		}
+		#header #logo img {
+			width: 50px;
+		}
+		#header h1 {
+			margin: 10px 0 0;
+			font-size: 1.2em;
+			line-height: 1.2;
+		}
+		#content h2,
+		#content h3 {
+			font-size: 1.5em;
+			line-height: 1.4;
+		}
+		#log-table {
+			font-size: 80%;
+		}
+		.cell-icon img {
+			width: 24px;
+		}
+		#schedule {
+			margin: 30px 0;
+		}
+		#footer {
+			margin: 30px 0 0;
+			padding: 20px 0;
+			font-size: 80%;
+		}
+		#footer p,
+		#footer ul {
+			margin-bottom: 0;
+		}
+	}
+	@media (min-width:768px) {
+		.container-narrow {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+		#schedule {
+			margin: 50px 0;
+		}
+		#footer {
+			margin: 50px 0 0;
+			padding: 30px 0;
+		}
+	}
+</style>
 </head>
 <body>
-	Designer meets Programming.
+<div class="jumbotron masthead" id="header">
+	<div class="container-narrow">
+		<span id="logo"><img src="img/main.svg" alt="logo mark" /></span>
+		<h1>Designer meets Programming</h1>
+	</div><!-- /.container -->
+</div><!-- /#header -->
+<div id="content" class="container-narrow">
+	<section id="lead">
+		<h2>デザイナー向けプログラミング勉強会</h2>
+		<p>DmP (Designer meets Programming) は、デザイナーをはじめとした「プログラミング初心者」のための勉強会です。テーマに沿ったハンズオン形式のプログラム勉強会や、プログラミングのことを相談・解決する会を開催します。<br />
+			プログラムを知りたい・作ってみたい方、一緒に勉強しませんか？</p>
+			<p class="well">デザイナー以外の方も参加できます。HTML/CSSメインでその先になかなか踏み出せないコーダーや、普段の業務では直接コードを書く機会がないディレクターなどでも、もちろんOKですよ (｡ゝω・｡)v</p>
+			<p class="well">PmD = プログラマー向けデザイン勉強会もあるかも…</p>
+	</section><!-- /#lead -->
+
+	<section id="schedule">
+		<h3>{ これからの予定 }</h3>
+		<table id="log-table" class="table table-bordered">
+			<thead>
+				<tr>
+					<th>日付</th>
+					<th>テーマ</th>
+					<th>概要</th>
+					<th>資料</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="info">
+					<td>2013.08.02</td>
+					<td>DmP Vol.1 : 外部サイトのRSSを取得してサイトに表示してみよう</td>
+					<td class="cell-icon"><a href="http://connpass.com/event/2884/"><img src="img/ico_connpass.svg" alt="connpass" class="icon-link" /></a></td>
+					<td class="cell-icon"><a href="#"><img src="img/ico_github.svg" alt="GitHub" class="icon-link" /></a></td>
+				</tr>
+				<tr class="muted">
+					<td>2013.09.xx</td>
+					<td>PmD Vol.1 : 調整中</td>
+					<td class="cell-icon">-</td>
+					<td class="cell-icon">-</td>
+				</tr>
+			</tbody>
+		</table>
+	</section><!-- /#schedule -->
+</div><!-- /#content -->
+
+<footer id="footer">
+		<p>Copyright &copy; DmP.</p>
+		<ul id="link-footer" class="inline">
+			<li><a href="https://github.com/Designer-meets-Programming">GitHub</a></li><li><a href="https://www.facebook.com/dmposaka">Facebook</a></li>
+		</ul>
+</footer><!-- /.footer -->
 </body>
 </html>
