@@ -24,6 +24,7 @@
 	#log-table td { vertical-align:middle; }
 	td.cell-icon { text-align:center; }
 	.cell-icon img { width:24px; }
+	#btn-social li {width: 100px;}
 	@media (max-width:767px) {
 		#header,  #footer { margin-right:-20px; margin-left:-20px; }
 		#header { margin-bottom:20px; padding:30px 0; }
@@ -88,10 +89,23 @@
 </div><!-- /#content -->
 
 <footer id="footer">
+		<ul id="btn-social" class="inline">
+			<li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a></li>
+			<li><div class="fb-like" data-href="http://designer-meets-programming.github.io" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false"></div></li>
+		</ul>
 		<p>Copyright &copy; DmP ( organizers: <a href="https://twitter.com/kamiyam"><img src="img/ico_kamiyam.png" alt="kamiyam"></a> <a href="https://twitter.com/yokotak0527"><img src="img/ico_yokotak0527.png" alt="yokotak0527"></a> <a href="https://twitter.com/awayuki"><img src="img/ico_awayuki.png" alt="awayuki"></a> )</p>
 		<ul id="link-footer" class="inline">
 			<li><a href="https://github.com/Designer-meets-Programming">GitHub</a></li><li><a href="https://www.facebook.com/dmposaka">Facebook</a></li>
 		</ul>
 </footer><!-- /.footer -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=540977562636705";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 </html>
