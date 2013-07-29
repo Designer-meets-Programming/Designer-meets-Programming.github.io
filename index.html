@@ -2,102 +2,43 @@
 <html lang="ja-JP">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title>Designer meets Programming == デザイナー向けプログラミング勉強会</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta http-equiv="Imagetoolbar" content="no" />
+<meta property="og:site_name" content="Designer meets Programming (DmP)" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="DmP : デザイナー向けプログラミング勉強会" />
+<meta property="og:image" content="http://designer-meets-programming.github.io/img/img_ogp.png" />
+<meta property="og:description" content="DmPは、デザイナーをはじめとした「プログラミング初心者」のための勉強会です。ハンズオン勉強会や、プログラミング相談会などを大阪で開催しています。" />
+<meta property="og:url" content="http://designer-meets-programming.github.io" />
+<meta property="og:locale" content="ja_JP" />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
 <style>
-	#header {
-		margin: 0 0 50px;
-		padding: 50px 0 70px;
-		background: #0ac;
-		border-bottom: 1px solid #fff;
-		text-align: center;
-	}
-	#header h1 {
-		font-size: 2em;
-		font-weight: 200;
-		letter-spacing: 0.05em;
-		text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
-		color: #fff;
-	}
-	#content h2,
-	#content h3 {
-		text-align: center;
-	}
-	#footer {
-		text-align: center;
-		background: #eee;
-		border-top: 1px solid #fff;
-		color: #888;
-	}
-	#link-footer li:first-child {
-		border-left: none;
-	}
-	#log-table th {
-		text-align: center;
-		vertical-align: middle;
-	}
-	#log-table td {
-		vertical-align: middle;
-	}
-	td.cell-icon {
-		text-align: center;
-	}
+	#header { margin:0 0 50px; padding:50px 0 70px; background:#0ac; border-bottom:1px solid #fff; text-align:center; }
+	#header h1 { font-size:2em; font-weight:200; letter-spacing:0.05em; text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5); color:#fff; }
+	#content h2, #content h3 { text-align:center; }
+	#footer { text-align:center; background:#eee; border-top:1px solid #fff; color:#888; }
+	#link-footer li:first-child { border-left:none; }
+	#log-table th { text-align:center; vertical-align:middle; }
+	#log-table td { vertical-align:middle; }
+	td.cell-icon { text-align:center; }
+	.cell-icon img { width:24px; }
 	@media (max-width:767px) {
-		#header, #footer {
-			margin-right: -20px;
-			margin-left: -20px;
-		}
-		#header {
-			margin-bottom: 20px;
-			padding: 30px 0;
-		}
-		#header #logo img {
-			width: 50px;
-		}
-		#header h1 {
-			margin: 10px 0 0;
-			font-size: 1.2em;
-			line-height: 1.2;
-		}
-		#content h2,
-		#content h3 {
-			font-size: 1.5em;
-			line-height: 1.4;
-		}
-		#log-table {
-			font-size: 80%;
-		}
-		.cell-icon img {
-			width: 24px;
-		}
-		#schedule {
-			margin: 30px 0;
-		}
-		#footer {
-			margin: 30px 0 0;
-			padding: 20px 0;
-			font-size: 80%;
-		}
-		#footer p,
-		#footer ul {
-			margin-bottom: 0;
-		}
+		#header,  #footer { margin-right:-20px; margin-left:-20px; }
+		#header { margin-bottom:20px; padding:30px 0; }
+		#header #logo img { width:50px; }
+		#header h1 { margin:10px 0 0; font-size:1.2em; line-height:1.2; }
+		#content h2, #content h3 { font-size:1.5em; line-height:1.4; }
+		#log-table { font-size:80%; }
+		#schedule { margin:30px 0; }
+		#footer { margin:30px 0 0; padding:20px 0; font-size:80%; }
+		#footer p, #footer ul { margin-bottom:0; }
 	}
 	@media (min-width:768px) {
-		.container-narrow {
-			max-width: 700px;
-			margin: 0 auto;
-		}
-		#schedule {
-			margin: 50px 0;
-		}
-		#footer {
-			margin: 50px 0 0;
-			padding: 30px 0;
-		}
+		.container-narrow { max-width:700px; margin:0 auto; }
+		#schedule { margin:50px 0; }
+		#footer { margin:50px 0 0; padding:30px 0; }
 	}
 </style>
 </head>
@@ -131,13 +72,13 @@
 			<tbody>
 				<tr class="info">
 					<td>2013.08.02</td>
-					<td>DmP Vol.1 : 外部サイトのRSSを取得してサイトに表示してみよう</td>
+					<td>DmP Vol.1 :外部サイトのRSSを取得してサイトに表示してみよう</td>
 					<td class="cell-icon"><a href="http://connpass.com/event/2884/"><img src="img/ico_connpass.svg" alt="connpass" class="icon-link" /></a></td>
-					<td class="cell-icon"><a href="#"><img src="img/ico_github.svg" alt="GitHub" class="icon-link" /></a></td>
+					<td class="cell-icon"><!-- <a href="#"><img src="img/ico_github.svg" alt="GitHub" class="icon-link" /></a> -->-</td>
 				</tr>
 				<tr class="muted">
 					<td>2013.09.xx</td>
-					<td>PmD Vol.1 : 調整中</td>
+					<td>PmD Vol.1 :調整中</td>
 					<td class="cell-icon">-</td>
 					<td class="cell-icon">-</td>
 				</tr>
@@ -147,7 +88,7 @@
 </div><!-- /#content -->
 
 <footer id="footer">
-		<p>Copyright &copy; DmP.</p>
+		<p>Copyright &copy; DmP ( organizers: <a href="https://twitter.com/kamiyam"><img src="img/ico_kamiyam.png" alt="kamiyam"></a> <a href="https://twitter.com/yokotak0527"><img src="img/ico_yokotak0527.png" alt="yokotak0527"></a> <a href="https://twitter.com/awayuki"><img src="img/ico_awayuki.png" alt="awayuki"></a> )</p>
 		<ul id="link-footer" class="inline">
 			<li><a href="https://github.com/Designer-meets-Programming">GitHub</a></li><li><a href="https://www.facebook.com/dmposaka">Facebook</a></li>
 		</ul>
