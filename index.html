@@ -21,8 +21,8 @@
 	#content h2, #content h3 { text-align:center; }
 	#footer { text-align:center; background:#eee; border-top:1px solid #fff; color:#888; }
 	#link-footer li:first-child { border-left:none; }
-	#log-table th { text-align:center; vertical-align:middle; }
-	#log-table td { vertical-align:middle; }
+	.log-table th { text-align:center; vertical-align:middle; }
+	.log-table td { vertical-align:middle; }
 	td.cell-icon { text-align:center; }
 	.cell-icon img { width:24px; }
 	#btn-social li {width: 100px;}
@@ -32,7 +32,7 @@
 		#header #logo img { width:50px; }
 		#header h1 { margin:10px 0 0; font-size:1.2em; line-height:1.2; }
 		#content h2, #content h3 { font-size:1.5em; line-height:1.4; }
-		#log-table { font-size:80%; }
+		.log-table { font-size:80%; }
 		#schedule { margin:30px 0; }
 		#footer { margin:30px 0 0; padding:20px 0; font-size:80%; }
 		#footer p, #footer ul { margin-bottom:0; }
@@ -41,6 +41,10 @@
 		.container-narrow { max-width:700px; margin:0 auto; }
 		#schedule { margin:50px 0; }
 		#footer { margin:50px 0 0; padding:30px 0; }
+		.log-table .date { width: 10%; }
+		.log-table .theme { width: 74%; }
+		.log-table .outline { width: 8%; }
+		.log-table .resume { width: 8%; }
 	}
 </style>
 </head>
@@ -62,27 +66,43 @@
 
 	<section id="schedule">
 		<h3>{ これからの予定 }</h3>
-		<table id="log-table" class="table table-bordered">
+		<table class="table table-bordered log-table">
 			<thead>
 				<tr>
-					<th>日付</th>
-					<th>テーマ</th>
-					<th>概要</th>
-					<th>資料</th>
+					<th class="date">日付</th>
+					<th class="theme">テーマ</th>
+					<th class="outline">概要</th>
+					<th class="resume">資料</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="info">
+				<tr class="muted">
+					<td>2013.09.21</td>
+					<td>PmD Vol.1 :調整中</td>
+					<td class="cell-icon">-</td>
+					<td class="cell-icon">-</td>
+				</tr>
+			</tbody>
+		</table>
+	</section><!-- /#schedule -->
+
+	<section id="schedule">
+		<h3>{ これまでの記録 }</h3>
+		<table class="table table-bordered log-table">
+			<thead>
+				<tr>
+					<th class="date">日付</th>
+					<th class="theme">テーマ</th>
+					<th class="outline">概要</th>
+					<th class="resume">資料</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
 					<td>2013.08.02</td>
 					<td>DmP Vol.1 :外部サイトのRSSを取得してサイトに表示してみよう</td>
 					<td class="cell-icon"><a href="http://connpass.com/event/2884/"><img src="img/ico_connpass.svg" alt="connpass" class="icon-link" /></a></td>
 					<td class="cell-icon"><!-- <a href="#"><img src="img/ico_github.svg" alt="GitHub" class="icon-link" /></a> -->-</td>
-				</tr>
-				<tr class="muted">
-					<td>2013.09.xx</td>
-					<td>PmD Vol.1 :調整中</td>
-					<td class="cell-icon">-</td>
-					<td class="cell-icon">-</td>
 				</tr>
 			</tbody>
 		</table>
